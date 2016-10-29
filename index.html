@@ -174,13 +174,16 @@
 						<input name="email" type="email" class="form-control" id="email" placeholder="Email">
 					</div>
 					<div class="col-md-6 col-sm-6">
-						<input name="delicacy" type="text" class="form-control" id="name" placeholder="Delicious food I ate.">
+						<input name="delicacy" type="text" class="form-control" id="delicacy" placeholder="Delicious food I ate.">
 					</div>
 					<div class="col-md-6 col-sm-6">
-						<input name="kiosk-name" type="email" class="form-control" id="email" placeholder="Kiosk Name">
+						<input name="kiosk-name" type="text" class="form-control" id="kiosk-name" placeholder="Kiosk Name">
 					</div>
 					<div class="col-md-6 col-sm-6">
-						<textarea name="address" rows="3" class="form-control" id="message" placeholder="Address"></textarea>
+						<textarea name="address" rows="2" class="form-control" id="message" placeholder="Address/Locality"></textarea>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<input name="city" type="text" class="form-control" id="city" placeholder="City">
 					</div>
 					<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
 						<input name="submit" type="submit" class="form-control" id="submit" value="Add it!">
@@ -200,7 +203,7 @@
 			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 				<div class="address">
 					<p><i class="fa fa-map-marker"></i> Your Location</p>
-					<h4>120 Duis aute irure, California, USA</h4>
+					<h4><div id="address"></div></h4>
 				</div>
 				<h2 class="heading">Contact Info.</h2>
 				<div class="ph">
@@ -245,6 +248,7 @@
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/location.js"></script>
 
 </body>
 </html>
